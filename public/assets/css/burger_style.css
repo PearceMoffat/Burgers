@@ -1,0 +1,28 @@
+body {
+    background-color: #FEF0D5;
+}
+
+.right {
+    float: right;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#message {
+    color: red;
+}
+
+#btnDelete {
+    line-height: 8px;
+    padding: 1px;
+}
+
+#eaten-burgers {
+    color: gray;
+}
+
+#uneaten-burgers {
+    color: blue;
+}

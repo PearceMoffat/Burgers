@@ -1,0 +1,46 @@
+
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <img style="width: 350px; height:245px" src="https://static.vecteezy.com/system/resources/previews/000/148/700/non_2x/vector-cute-character-burger-smiling-with-quote.jpg">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3 text-center">
+            <h1>Burger Menu</h1>
+            {{#each burgers}}
+            <p>
+                <form action="/{{this.id}}?_method=PUT" method="POST">
+                    <span id="uneaten-burgers">{{this.burger_name}}</span>
+                    <span class="right"><button>Devour It</button></span>
+                </form>
+            </p>
+            {{/each}}
+        </div>
+        <div class="col-md-4 text-center">
+            <h2 id="message">{{script}}</h2>
+        </div>
+        <div class="col-md-3 text-center" >
+            <h1>Eaten Burgers</h1>
+            {{#each eaten}}
+
+                <form action="/{{this.id}}?_method=DELETE" method="POST">
+                    <span id="eaten-burgers">{{this.burger_name}}</span>
+                    <span class="right"><button id="btnDelete">x</button></span>
+                </form>
+            
+            {{/each}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-center">
+            <form action="/index" method="POST">
+            <p>Enter a Burger to Eat!</p>
+            <input style="width:250px" type=textarea name="burgerName">
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>

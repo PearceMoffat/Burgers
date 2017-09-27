@@ -1,1 +1,2 @@
-# Burgers
+# Tasty Burger
+Tasty Burger is a burger eating simulator. The user has three options. First, they can add burgers to the menu by typing in the burger name and hitting the submit button, the form must not be empty. Second, they can EAT-DA-BURGER by clicking the "Devour It" button next to any burger on the menu, this will send the burger to the eaten burgers side of the website. Last, they can remove burgers from the eaten burgers side by clicking the small 'x' button next to the burger name, just in case they want to forget about a burger they've eaten.
