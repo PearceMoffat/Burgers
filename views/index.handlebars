@@ -20,6 +20,13 @@
         </div>
         <div class="col-md-4 text-center">
             <h2 id="message">{{script}}</h2>
+            <br><br><br><br><br><br><br><br>
+            <form action="/index" method="POST">
+            <p>Enter a Burger to Eat!</p>
+            <input style="width:250px" type=textarea name="burgerName">
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
         </div>
         <div class="col-md-3 text-center" >
             <h1>Eaten Burgers</h1>
@@ -31,16 +38,6 @@
                 </form>
             
             {{/each}}
-        </div>
-    </div>
-    <div class="row">
-        <div class="text-center">
-            <form action="/index" method="POST">
-            <p>Enter a Burger to Eat!</p>
-            <input style="width:250px" type=textarea name="burgerName">
-            <br><br>
-            <input type="submit" value="Submit">
-            </form>
         </div>
     </div>
 </div>
